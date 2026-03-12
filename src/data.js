@@ -156,7 +156,7 @@ export const persons = [
     km: 'jusqu\'à 15\'000 km',
     propulsion: 'Essence',
     showCP: true,
-    analysis: 'Helvetia est la moins chère (922 CHF !) grâce à un rabais unique de 15% sur RC+CC la 1ère année — mais attention, ce rabais disparaît dès le 01.01.2027 ou en cas de changement de véhicule, et le contrat est d\'1 an seulement. Le système RepairPLUS impose un garage partenaire sous peine de franchises majorées (+250 collision, +200 CP). La Vaudoise reste la référence stable (1\'192 CHF en CC, 860 CHF en CP) avec bonus et faute grave inclus. L\'offre Vaudoise Abrézol négociée à CHF 1\'087 est compétitive mais avec franchise bris de glaces CHF 200. AXA offre la RC la moins chère (367 CHF) et le libre choix du garage. La Mobilière propose la protection juridique et la ristourne 10%. Zurich est la plus onéreuse.',
+    analysis: 'Helvetia est la moins chère (922 CHF) grâce à un rabais de 15% la 1ère année — mais ce rabais disparaît au 01.01.2027 et le contrat est d\'1 an seulement, avec le système RepairPLUS qui impose un garage partenaire (+250/+200 de franchise sinon). L\'offre Vaudoise Abrézol négociée à 1\'087 CHF est la 2e moins chère avec bonus et faute grave inclus, mais avec une franchise bris de glaces de CHF 200. La Vaudoise directe reste solide (1\'192 CHF en CC, 860 CHF en CP). AXA (1\'231 CHF) offre la RC la moins chère (367 CHF) et le libre choix du garage. La Mobilière (1\'304 CHF) inclut la protection juridique et propose une ristourne 10%. Zurich est la plus chère (1\'519 CHF).',
     offers: {
       cascoComplete: [
         { insurer: 'AXA', total: 1231.39, primeNette: 1165.63, taxes: 65.76,
