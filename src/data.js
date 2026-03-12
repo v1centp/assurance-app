@@ -156,7 +156,7 @@ export const persons = [
     km: 'jusqu\'à 15\'000 km',
     propulsion: 'Essence',
     showCP: true,
-    analysis: 'La Vaudoise domine nettement en casco complète (1\'192 CHF) et partielle (860 CHF), avec bonus et faute grave inclus. AXA est compétitive en CP (876 CHF) et offre la RC la moins chère (367 CHF) + libre choix du garage. L\'offre Vaudoise Abrézol affiche 1\'375 CHF mais une prime négociée à CHF 1\'087 a été obtenue (rabais 287 CHF) — ce qui la rend très compétitive, bien qu\'elle ait une franchise bris de glaces de CHF 200 et concerne un véhicule légèrement différent (VD 104839 Color Edition). La Mobilière propose la protection juridique et la ristourne 10%, mais reste chère. Zurich est la plus onéreuse dans les deux variantes.',
+    analysis: 'Helvetia est la moins chère (922 CHF !) grâce à un rabais unique de 15% sur RC+CC la 1ère année — mais attention, ce rabais disparaît dès le 01.01.2027 ou en cas de changement de véhicule, et le contrat est d\'1 an seulement. Le système RepairPLUS impose un garage partenaire sous peine de franchises majorées (+250 collision, +200 CP). La Vaudoise reste la référence stable (1\'192 CHF en CC, 860 CHF en CP) avec bonus et faute grave inclus. L\'offre Vaudoise Abrézol négociée à CHF 1\'087 est compétitive mais avec franchise bris de glaces CHF 200 et sur un véhicule différent (VD 104839 Color Edition). AXA offre la RC la moins chère (367 CHF) et le libre choix du garage. La Mobilière propose la protection juridique et la ristourne 10%. Zurich est la plus onéreuse.',
     offers: {
       cascoComplete: [
         { insurer: 'AXA', total: 1231.39, primeNette: 1165.63, taxes: 65.76,
@@ -225,6 +225,19 @@ export const persons = [
           contratDebut: '07.01.2026', contratFin: '31.12.2029', resiliation: 'Renouvellement tacite',
           noteSpeciale: 'Agent Abrézol. Prime négociée à CHF 1\'087 (rabais 287 CHF vs offre initiale 1\'375). Protection bonus retirable (-113 CHF). Effets perso retirables (-23.20 CHF). Ristourne Vaudoise ~10% tous les 2 ans. Franchise bris de glaces CHF 200 ! NB : offre sur plaque VD 104839 (Color Edition), pas VD 107839 (Cosmo).'
         },
+        { insurer: 'Helvetia', total: 921.90, primeNette: 871.30, taxes: 50.60,
+          rc: 372.20, degreRC: 'M00/30%', franchiseRC25: 0, franchiseRC25minus: null,
+          collision: 460.10, degreCollision: 'V00/30%', franchiseCollision25: 1000, franchiseCollision25minus: null,
+          cascoPartielle: 0, franchiseCP: 0,
+          vol: true, incendie: true, brisGlaces: true, fouines: true, animaux: true, vandalisme: true,
+          phares: true, dommagesParc: 'NON (véhicule > 10 ans)', habitacle: false, pneus: false, cles: false,
+          effetsPerso: false,
+          bonus: 'Oui (inclus, Standard)', fauteGrave: 'Oui (39 CHF, renonciation faute grave)',
+          depannage: false, vehiculeRemplacement: 'Oui (via Service Partner RepairPLUS)', protectionJuridique: false, accidentOccupants: false,
+          indemnisation: '–', garageLibre: 'RepairPLUS : franchise majorée si hors partenaire (+250 collision, +200 CP)',
+          contratDebut: '01.01.2026', contratFin: '01.01.2027', resiliation: '1 an (résiliation possible avec dépôt carte grise)',
+          noteSpeciale: 'Rabais unique 15% RC+CC 1ère année (cesse au 01.01.2027 ou changement véhicule). RepairPLUS : chez Service Partner = véhicule remplacement + nettoyage + garantie à vie. Hors partenaire : franchise collision +250, CP +200. Dommages parcage NON couverts (véhicule > 10 ans). Pas de Keep Driving, pas de prestations de service.'
+        },
       ],
       cascoPartielle: [
         { insurer: 'AXA', total: 876.28, primeNette: 827.43, taxes: 48.85,
@@ -291,6 +304,10 @@ export const persons = [
       'Vaudoise Abrézol': {
         pros: ['Prime négociée à CHF 1\'087 (rabais 287 CHF)', 'Bonus et faute grave inclus', 'Assistance 24/7 incluse', 'Ristourne Vaudoise ~10% tous les 2 ans', 'Options modulables (bonus -113, effets perso -23.20)'],
         cons: ['Offre initiale plus chère que Vaudoise directe (1\'375 vs 1\'192)', 'RC plus chère (514 vs 436 CHF)', 'Franchise bris de glaces CHF 200 (unique dans le comparatif)', 'Offre sur plaque/véhicule différent (VD 104839 Color Edition)'],
+      },
+      'Helvetia': {
+        pros: ['La moins chère du comparatif (922 CHF)', 'Protection bonus incluse (Standard)', 'Faute grave couverte (39 CHF)', 'Véhicule de remplacement via Service Partner', 'Garantie à vie réparations chez partenaire', 'Contrat court (1 an, résiliation flexible)'],
+        cons: ['Rabais 15% uniquement la 1ère année (prix réel plus élevé dès 2027)', 'RepairPLUS : franchise majorée hors garage partenaire (+250/+200)', 'Dommages parcage NON couverts (véhicule > 10 ans)', 'Pas de dépannage/assistance', 'Pas d\'effets personnels', 'Pas de protection juridique', 'Pas de Keep Driving ni prestations de service'],
       },
     },
   },
@@ -661,4 +678,5 @@ export const insurerColors = {
   'Vaudoise': '#00a551',
   'Zurich': '#003399',
   'Vaudoise Abrézol': '#7cc992',
+  'Helvetia': '#e4032e',
 };
