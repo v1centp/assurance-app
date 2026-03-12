@@ -156,7 +156,7 @@ export const persons = [
     km: 'jusqu\'à 15\'000 km',
     propulsion: 'Essence',
     showCP: true,
-    analysis: 'La Vaudoise domine nettement en casco complète (1\'192 CHF) et partielle (860 CHF), avec bonus et faute grave inclus. AXA est compétitive en CP (876 CHF) et offre la RC la moins chère (367 CHF) + libre choix du garage. L\'offre Vaudoise Abrézol (1\'375 CHF) est plus chère que la Vaudoise directe, avec en plus une franchise bris de glaces de CHF 200, et concerne un véhicule légèrement différent (VD 104839 Color Edition). La Mobilière propose la protection juridique et la ristourne 10%, mais reste chère. Zurich est la plus onéreuse dans les deux variantes.',
+    analysis: 'La Vaudoise domine nettement en casco complète (1\'192 CHF) et partielle (860 CHF), avec bonus et faute grave inclus. AXA est compétitive en CP (876 CHF) et offre la RC la moins chère (367 CHF) + libre choix du garage. L\'offre Vaudoise Abrézol affiche 1\'375 CHF mais une prime négociée à CHF 1\'087 a été obtenue (rabais 287 CHF) — ce qui la rend très compétitive, bien qu\'elle ait une franchise bris de glaces de CHF 200 et concerne un véhicule légèrement différent (VD 104839 Color Edition). La Mobilière propose la protection juridique et la ristourne 10%, mais reste chère. Zurich est la plus onéreuse dans les deux variantes.',
     offers: {
       cascoComplete: [
         { insurer: 'AXA', total: 1231.39, primeNette: 1165.63, taxes: 65.76,
@@ -223,7 +223,7 @@ export const persons = [
           depannage: 'Assistance 24/7 (0800 811 911)', vehiculeRemplacement: 'Non désiré', protectionJuridique: false, accidentOccupants: 'Non désiré',
           indemnisation: 'Valeur de base majorée', garageLibre: false,
           contratDebut: '07.01.2026', contratFin: '31.12.2029', resiliation: 'Renouvellement tacite',
-          noteSpeciale: 'Agent Abrézol. Franchise bris de glaces CHF 200 ! NB : offre établie sur plaque VD 104839 (Color Edition), pas VD 107839 (Cosmo).'
+          noteSpeciale: 'Agent Abrézol. Prime négociée à CHF 1\'087 (rabais 287 CHF vs offre initiale 1\'375). Protection bonus retirable (-113 CHF). Effets perso retirables (-23.20 CHF). Ristourne Vaudoise ~10% tous les 2 ans. Franchise bris de glaces CHF 200 ! NB : offre sur plaque VD 104839 (Color Edition), pas VD 107839 (Cosmo).'
         },
       ],
       cascoPartielle: [
@@ -289,8 +289,8 @@ export const persons = [
         cons: ['La plus chère dans les deux variantes', 'RC très chère (580-591 CHF)'],
       },
       'Vaudoise Abrézol': {
-        pros: ['Bonus et faute grave inclus', 'Assistance 24/7 incluse', 'Agent local Abrézol'],
-        cons: ['Plus chère que Vaudoise directe (1\'375 vs 1\'192 CHF)', 'RC plus chère (514 vs 436 CHF)', 'Franchise bris de glaces CHF 200', 'Offre sur plaque/véhicule différent (VD 104839 Color Edition)'],
+        pros: ['Prime négociée à CHF 1\'087 (rabais 287 CHF)', 'Bonus et faute grave inclus', 'Assistance 24/7 incluse', 'Ristourne Vaudoise ~10% tous les 2 ans', 'Options modulables (bonus -113, effets perso -23.20)'],
+        cons: ['Offre initiale plus chère que Vaudoise directe (1\'375 vs 1\'192)', 'RC plus chère (514 vs 436 CHF)', 'Franchise bris de glaces CHF 200 (unique dans le comparatif)', 'Offre sur plaque/véhicule différent (VD 104839 Color Edition)'],
       },
     },
   },
