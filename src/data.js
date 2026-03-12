@@ -198,7 +198,7 @@ export const persons = [
           contratDebut: '24.02.2026', contratFin: '31.12.2029', resiliation: 'Renouvellement tacite',
           noteSpeciale: 'Coopérative (44 mio CHF en 2025)'
         },
-        { insurer: 'Vaudoise Abrézol', total: 1374.80, primeNette: 1301.60, taxes: 73.20,
+        { insurer: 'Vaudoise Abrézol', total: 1087.00, primeNette: 1029.10, taxes: 57.90,
           rc: 514.30, degreRC: '30%', franchiseRC25: 0, franchiseRC25minus: null,
           collision: 373.30, degreCollision: '30%', franchiseCollision25: 1000, franchiseCollision25minus: null,
           cascoPartielle: 414.00, franchiseCP: 0,
@@ -210,7 +210,7 @@ export const persons = [
           depannage: 'Assistance 24/7 (0800 811 911)', vehiculeRemplacement: 'Non désiré', protectionJuridique: false, accidentOccupants: 'Non désiré',
           indemnisation: 'Valeur de base majorée', garageLibre: false,
           contratDebut: '07.01.2026', contratFin: '31.12.2029', resiliation: 'Renouvellement tacite',
-          noteSpeciale: 'Agent Abrézol. Prime négociée à CHF 1\'087 (rabais 287 CHF vs offre initiale 1\'375). Protection bonus retirable (-113 CHF). Effets perso retirables (-23.20 CHF). Ristourne Vaudoise ~10% tous les 2 ans. Franchise bris de glaces CHF 200.'
+          noteSpeciale: 'Agent Abrézol. Prime négociée (rabais 287 CHF vs offre initiale 1\'375). Protection bonus retirable (-113 CHF). Effets perso retirables (-23.20 CHF). Ristourne Vaudoise ~10% tous les 2 ans. Franchise bris de glaces CHF 200.'
         },
         { insurer: 'Zurich', total: 1518.60, primeNette: 1438.10, taxes: 80.50,
           rc: 591.10, degreRC: '–', franchiseRC25: 0, franchiseRC25minus: 1000,
