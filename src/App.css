@@ -1,0 +1,602 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.app-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Person Tabs */
+.person-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.person-tab {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.person-tab:hover {
+  background: var(--card-hover);
+  color: var(--text);
+}
+
+.person-tab.active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+.person-tab .tab-vehicle {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Coverage Toggle */
+.coverage-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.coverage-btn {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
+
+.coverage-btn:hover {
+  background: var(--card-hover);
+}
+
+.coverage-btn.active {
+  background: var(--purple);
+  color: white;
+  border-color: var(--purple);
+}
+
+/* Vehicle info */
+.vehicle-info {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.vehicle-info-item {
+  font-size: 0.85rem;
+}
+
+.vehicle-info-item .label {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vehicle-info-item .value {
+  font-weight: 600;
+}
+
+/* Analysis box */
+.analysis-box {
+  background: #eff6ff;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #1e3a5f;
+  line-height: 1.6;
+}
+
+.analysis-box strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #1d4ed8;
+  font-size: 0.9rem;
+}
+
+.analysis-box p {
+  margin: 0;
+}
+
+/* Note box */
+.note-box {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #92400e;
+}
+
+.note-box strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* Ranking */
+.ranking-section {
+  margin-bottom: 2rem;
+}
+
+.ranking-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.ranking-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ranking-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  border: 2px solid var(--border);
+  transition: all 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.ranking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ranking-card.rank-1 {
+  border-color: var(--gold);
+  box-shadow: 0 2px 12px rgba(217, 119, 6, 0.15);
+}
+
+.ranking-card.rank-2 {
+  border-color: var(--silver);
+}
+
+.ranking-card.rank-3 {
+  border-color: var(--bronze);
+}
+
+.ranking-badge {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.ranking-insurer {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.ranking-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ranking-card.rank-1 .ranking-price {
+  color: var(--gold);
+}
+
+.ranking-detail {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.ranking-diff {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.ranking-diff.positive {
+  color: var(--red);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* Tables */
+.table-section {
+  margin-bottom: 2rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.comparison-table th {
+  background: #f1f5f9;
+  padding: 0.7rem 0.8rem;
+  text-align: right;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.comparison-table th:first-child {
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: right;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  color: var(--text-muted);
+}
+
+.comparison-table tr:hover td {
+  background: #f8fafc;
+}
+
+.comparison-table tr.total-row td {
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-top: 2px solid var(--border);
+  padding-top: 0.8rem;
+  background: #f8fafc;
+}
+
+.comparison-table tr.section-header td {
+  font-weight: 600;
+  background: #f8fafc;
+  color: var(--text);
+  font-size: 0.85rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.comparison-table .best-price {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.comparison-table .worst-price {
+  color: var(--red);
+  opacity: 0.7;
+}
+
+.comparison-table .yes {
+  color: var(--green);
+}
+
+.comparison-table .no {
+  color: var(--red);
+  opacity: 0.5;
+}
+
+.comparison-table .detail {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+/* Chart */
+.chart-section {
+  margin-bottom: 2rem;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* Pros/Cons */
+.pros-cons-section {
+  margin-bottom: 2rem;
+}
+
+.pros-cons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pros-cons-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.pros-cons-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pros-cons-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pros-cons-card li {
+  font-size: 0.82rem;
+  padding: 0.25rem 0;
+  color: var(--text-muted);
+}
+
+.pros-cons-card li.pro::before {
+  content: '+ ';
+  color: var(--green);
+  font-weight: 700;
+}
+
+.pros-cons-card li.con::before {
+  content: '- ';
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* Projection */
+.projection-section {
+  margin-bottom: 2rem;
+}
+
+.projection-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.projection-table th {
+  background: #f1f5f9;
+  padding: 0.7rem 0.8rem;
+  text-align: right;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+.projection-table th:first-child {
+  text-align: left;
+}
+
+.projection-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: right;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.projection-table td:first-child {
+  text-align: left;
+}
+
+.projection-table .best-price {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Verdict */
+.verdict-section {
+  background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 1px solid var(--border);
+}
+
+.verdict-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.verdict-winner {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.verdict-winner-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.verdict-winner-price {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.verdict-savings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .verdict-savings {
+    grid-template-columns: 1fr;
+  }
+}
+
+.saving-item {
+  padding: 0.8rem;
+  background: var(--card);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.saving-vs {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.saving-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+/* Summary table */
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.82rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.summary-table th {
+  background: #f1f5f9;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+.summary-table td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.summary-table .winner {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Global section */
+.global-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.global-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.global-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.global-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.global-table th {
+  background: #f1f5f9;
+  padding: 0.7rem 0.8rem;
+  text-align: right;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+.global-table th:first-child {
+  text-align: left;
+}
+
+.global-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: right;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.global-table td:first-child {
+  text-align: left;
+}
+
+.global-table tr:hover td {
+  background: #f8fafc;
+}
+
+.global-table tr.total-row td {
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-top: 2px solid var(--border);
+  background: #f8fafc;
+}
+
+.global-table .best-price {
+  color: var(--green);
+  font-weight: 600;
+}
